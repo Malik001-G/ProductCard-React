@@ -68,7 +68,7 @@ const shoes = [
       "Nike Dunk Low Retro Premium combines timeless style with modern craftsmanship. Featuring a sleek Ivory base, Grey Mist suede overlays, and translucent accents, it offers a refined aesthetic.",
     name: "Nike Dunk Low Retro Premium",
     img: "./images/first.png",
-    price: "$125",
+    price: "$225",
     id: 3,
   },
 ];
