@@ -45,33 +45,8 @@
 import React from "react";
 import ReactDOM from "react-dom/client";
 import "./index.css";
-
-const shoes = [
-  {
-    description:
-      'The Air Jordan 3 Retro Craft "Ivory" combines timeless style with modern craftsmanship. Featuring a sleek Ivory base, Grey Mist suede overlays, and translucent accents, it offers a refined aesthetic.',
-    name: 'Air Jordan 3 Retro Craft "Ivory"',
-    img: "./images/first.png",
-    price: "$250",
-    id: 1,
-  },
-  {
-    description:
-      'Air Jordan 13 Retro "Blue Grey" combines timeless style with modern craftsmanship. Featuring a sleek Ivory base, Grey Mist suede overlays, and translucent accents, it offers a refined aesthetic.',
-    name: 'Air Jordan 13 Retro "Blue Grey"',
-    img: "./images/first.png",
-    price: "$200",
-    id: 2,
-  },
-  {
-    description:
-      "Nike Dunk Low Retro Premium combines timeless style with modern craftsmanship. Featuring a sleek Ivory base, Grey Mist suede overlays, and translucent accents, it offers a refined aesthetic.",
-    name: "Nike Dunk Low Retro Premium",
-    img: "./images/first.png",
-    price: "$225",
-    id: 3,
-  },
-];
+import Card from "./Card";
+import {shoes} from "./shoes"
 
 function CardList() {
   return (
@@ -84,18 +59,6 @@ function CardList() {
   );
 }
 
-const Card = (props) => {
-  const { img, name, description, price } = props;
-  return (
-    <section className="product">
-      <img className="product__image" src={img} alt={name} />
-      <h2 className="product__title">{name}</h2>
-      <p>{description}</p>
-      <span className="product__price ">{price}</span>
-      <button className="product__btn btn">BUY NOW</button>
-    </section>
-  );
-};
 
 const root = ReactDOM.createRoot(document.getElementById("root"));
 
